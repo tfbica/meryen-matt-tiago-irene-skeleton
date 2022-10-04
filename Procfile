@@ -1,1 +1,1 @@
-web: java -cp ./target/walking-scheleton-1-jar-with-dependencies.jar HelloWorld
+web: java -jar ./target/walking-scheleton-1-jar-with-dependencies.jar
