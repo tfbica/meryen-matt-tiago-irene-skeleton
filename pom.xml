@@ -31,22 +31,9 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>Main</mainClass>
+              <mainClass>HelloWorld</mainClass>
             </manifest>
           </archive>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.heroku.sdk</groupId>
-        <artifactId>heroku-maven-plugin</artifactId>
-        <version>0.4.4</version>
-        <configuration>
-          <jdkVersion>17</jdkVersion>
-          <appName>walking-scheleton</appName>
-          <processTypes>
-            <!-- Tell Heroku how to launch your application -->
-            <web>java -cp ./target/walking-scheleton-1-jar-with-dependencies.jar HelloWorld</web>
-          </processTypes>
         </configuration>
       </plugin>
       <plugin>
