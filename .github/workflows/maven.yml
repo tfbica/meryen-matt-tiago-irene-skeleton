@@ -1,6 +1,3 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
 name: Build, Test and Deploy
 
 on:
@@ -29,18 +26,10 @@ jobs:
     - name: Publish Test Report
       if: ${{ always() }}
       uses: scacap/action-surefire-report@v1
-#
-#  # job 1 - deploy
-#  deploy:
-#
-#    needs: build
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#    - uses: actions/checkout@v2
     - name: Deploy to Heroku
-      uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{secrets.HEROKUAPIKEY}}
-        heroku_app_name: "walking-scheleton" #Must be unique in Heroku
+        heroku_app_name: "walking-scheleton"
         heroku_email: "ipice1618@protonmail.com"
+        appdir: "deploy/heroku"
