@@ -1,1 +1,1 @@
-[![Java CI with Maven](https://github.com/Academy-Sept-22/meryen-matt-tiago-irene-scheleton/actions/workflows/maven.yml/badge.svg?branch=main&event=workflow_run)](https://github.com/Academy-Sept-22/meryen-matt-tiago-irene-scheleton/actions/workflows/maven.yml)
+[![Java CI with Maven](https://github.com/Academy-Sept-22/meryen-matt-tiago-irene-scheleton/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/Academy-Sept-22/meryen-matt-tiago-irene-scheleton/actions/workflows/maven.yml)
