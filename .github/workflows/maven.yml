@@ -42,5 +42,5 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKUAPIKEY}}
-        heroku_app_name: "walking-scheleton" #Must be unique in Heroku
-        heroku_email: "ipice1618@protonmail.com"
+        heroku_app_name: "walking-skeleton-academy" #Must be unique in Heroku
+        heroku_email: "tiago.bica@gmail.com"
