@@ -3,7 +3,7 @@ import static spark.Spark.*;
 public class HelloWorld {
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
-        get("/hello", (req, res) -> "Hello World");
+        get("/hello", (req, res) -> "Hello World 2");
     }
     static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
